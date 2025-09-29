@@ -14,8 +14,8 @@ else:
     print(f"Fiz a conversão automaticamente! Resultado: {kWh}kWh!")
 
 H = input("Digite o tempo (Δt) em horas: ")
-E = kWh * float(H[0])
-print(f"O resultado é de {E}kWh!")
+E = kWh * float(H)
+print(f"O resultado é de {E:.2f}kWh!")
 print()
 ContinueVR = str(input("Continuar para calcular o consumo em R$? "))
 if 'sim' in str(ContinueVR).lower():
